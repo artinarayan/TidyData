@@ -12,76 +12,75 @@ from the original dataset:
  
 ### Description of the variables from 'tidy_data_summary'
  
-The following table describes all variables of the 'tidy_data_summary' table. 
- 
-| Index |           Variables          |  Class  |  Range  | Description                                                                                               |
-|-------|------------------------------| --------|---------|-----------------------------------------------------------------------------------------------------------|
-|    1  | subject                      | integer |  1 - 30 | Identifies the human subject.                                                                             |
-|    2  | activity                     | factor  |  1 -  6 | Identifies the activity. Labels: WALKING, WALKING UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING |
-|    3  | Avrg-tBodyAcc-mean()-X       | numeric | [-1, 1] | Time domain, Average of means for body acceleration on X axis.                                            |
-|    4  | Avrg-tBodyAcc-mean()-Y       | numeric | [-1, 1] | Time domain, Average of means for body acceleration on Y axis.                                            |
-|    5  | Avrg-tBodyAcc-mean()-Z       | numeric | [-1, 1] | Time domain, Average of means for body acceleration on Z axis.                                            |
-|    6  | Avrg-tBodyAcc-std()-X        | numeric | [-1, 1] | Time domain, Average of standard deviations for body acceleration on X axis.                              |
-|    7  | Avrg-tBodyAcc-std()-Y        | numeric | [-1, 1] | Time domain, Average of standard deviations for body acceleration on Y axis.                              |
-|    8  | Avrg-tBodyAcc-std()-Z        | numeric | [-1, 1] | Time domain, Average of standard deviations for body acceleration on Z axis.                              |
-|    9  | Avrg-tGravityAcc-mean()-X    | numeric | [-1, 1] | Time domain, Average of means for gravity acceleration on X axis.                                         |
-|   10  | Avrg-tGravityAcc-mean()-Y    | numeric | [-1, 1] | Time domain, Average of means for gravity acceleration on Y axis.                                         |
-|   11  | Avrg-tGravityAcc-mean()-Z    | numeric | [-1, 1] | Time domain, Average of means for gravity acceleration on Z axis.                                         |
-|   12  | Avrg-tGravityAcc-std()-X     | numeric | [-1, 1] | Time domain, Average of standard deviations for gravity acceleration on X axis.                           |
-|   13  | Avrg-tGravityAcc-std()-Y     | numeric | [-1, 1] | Time domain, Average of standard deviations for gravity acceleration on Y axis.                           |
-|   14  | Avrg-tGravityAcc-std()-Z     | numeric | [-1, 1] | Time domain, Average of standard deviations for gravity acceleration on Z axis.                           |
-|   15  | Avrg-tBodyAccJerk-mean()-X   | numeric | [-1, 1] | Time domain, Average of means for the jerk of body acceleration on X axis.                                |
-|   16  | Avrg-tBodyAccJerk-mean()-Y   | numeric | [-1, 1] | Time domain, Average of means for the jerk of body acceleration on Y axis.                                |
-|   17  | Avrg-tBodyAccJerk-mean()-Z   | numeric | [-1, 1] | Time domain, Average of means for the jerk of body acceleration on Z axis.                                |
-|   18  | Avrg-tBodyAccJerk-std()-X    | numeric | [-1, 1] | Time domain, Average of standard deviations for the jerk of body acceleration on X axis.                  |
-|   19  | Avrg-tBodyAccJerk-std()-Y    | numeric | [-1, 1] | Time domain, Average of standard deviations for the jerk of body acceleration on Y axis.                  |
-|   20  | Avrg-tBodyAccJerk-std()-Z    | numeric | [-1, 1] | Time domain, Average of standard deviations for the jerk of body acceleration on Z axis.                  |
-|   21  | Avrg-tBodyGyro-mean()-X      | numeric | [-1, 1] | Time domain, Average of means for angular velocity on X axis.                                             |
-|   22  | Avrg-tBodyGyro-mean()-Y      | numeric | [-1, 1] | Time domain, Average of means for angular velocity on Y axis.                                             |
-|   23  | Avrg-tBodyGyro-mean()-Z      | numeric | [-1, 1] | Time domain, Average of means for angular velocity on Z axis.                                             |
-|   24  | Avrg-tBodyGyro-std()-X       | numeric | [-1, 1] | Time domain, Average of standard deviations for angular velocity on X axis.                               |
-|   25  | Avrg-tBodyGyro-std()-Y       | numeric | [-1, 1] | Time domain, Average of standard deviations for angular velocity on Y axis.                               |
-|   26  | Avrg-tBodyGyro-std()-Z       | numeric | [-1, 1] | Time domain, Average of standard deviations for angular velocity on Z axis.                               |
-|   27  | Avrg-tBodyGyroJerk-mean()-X  | numeric | [-1, 1] | Time domain, Average of means for the jerk of angular velocity on X axis.                                 |
-|   28  | Avrg-tBodyGyroJerk-mean()-Y  | numeric | [-1, 1] | Time domain, Average of means for the jerk of angular velocity on Y axis.                                 |
-|   29  | Avrg-tBodyGyroJerk-mean()-Z  | numeric | [-1, 1] | Time domain, Average of means for the jerk of angular velocity on Z axis.                                 |
-|   30  | Avrg-tBodyGyroJerk-std()-X   | numeric | [-1, 1] | Time domain, Average of standard deviations for the jerk of angular velocity on X axis.                   |
-|   31  | Avrg-tBodyGyroJerk-std()-Y   | numeric | [-1, 1] | Time domain, Average of standard deviations for the jerk of angular velocity on Y axis.                   |
-|   32  | Avrg-tBodyGyroJerk-std()-Z   | numeric | [-1, 1] | Time domain, Average of standard deviations for the jerk of angular velocity on Z axis.                   |
-|   33  | Avrg-tBodyAccMag-mean()      | numeric | [-1, 1] | Time domain, Average of means for the magnitude of body acceleration.                                     |
-|   34  | Avrg-tBodyAccMag-std()       | numeric | [-1, 1] | Time domain, Average of standard deviations for the magnitude of body acceleration.                       |
-|   35  | Avrg-tGravityAccMag-mean()   | numeric | [-1, 1] | Time domain, Average of means for the magnitude of gravity acceleration.                                  |
-|   36  | Avrg-tGravityAccMag-std()    | numeric | [-1, 1] | Time domain, Average of standard deviations for the magnitude of gravity acceleration.                    |
-|   38  | Avrg-tBodyAccJerkMag-mean()  | numeric | [-1, 1] | Time domain, Average of means for the magnitude of jerk, of body accelaration.                            |
-|   38  | Avrg-tBodyAccJerkMag-std()   | numeric | [-1, 1] | Time domain, Average of standard deviations for the magnitude of jerk, of body accelaration.              |
-|   39  | Avrg-tBodyGyroMag-mean()     | numeric | [-1, 1] | Time domain, Average of means for the magnitude of angular velocity.                                      |
-|   40  | Avrg-tBodyGyroMag-std()      | numeric | [-1, 1] | Time domain, Average of standard deviations for the magnitude of angular velocity.                        |
-|   41  | Avrg-tBodyGyroJerkMag-mean() | numeric | [-1, 1] | Time domain, Average of means for the magnitude of jerk, of the angular velocity.                         |
-|   42  | Avrg-tBodyGyroJerkMag-std()  | numeric | [-1, 1] | Time domain, Average of standard deviations for the magnitude of jerk, of the angular velocity.           |
-|   43  | Avrg-fBodyAcc-mean()-X       | numeric | [-1, 1] | Frequency domain, Average of means for body acceleration on X axis.                                       |
-|   44  | Avrg-fBodyAcc-mean()-Y       | numeric | [-1, 1] | Frequency domain, Average of means for body acceleration on Y axis.                                       |
-|   45  | Avrg-fBodyAcc-mean()-Z       | numeric | [-1, 1] | Frequency domain, Average of means for body acceleration on Z axis.                                       |
-|   46  | Avrg-fBodyAcc-std()-X        | numeric | [-1, 1] | Frequency domain, Average of standard deviations for body acceleration on X axis.                         |
-|   47  | Avrg-fBodyAcc-std()-Y        | numeric | [-1, 1] | Frequency domain, Average of standard deviations for body acceleration on Y axis.                         |
-|   48  | Avrg-fBodyAcc-std()-Z        | numeric | [-1, 1] | Frequency domain, Average of standard deviations for body acceleration on Z axis.                         |
-|   49  | Avrg-fBodyAccJerk-mean()-X   | numeric | [-1, 1] | Frequency domain, Average of means for the jerk of the body acceleration on X axis.                       |
-|   50  | Avrg-fBodyAccJerk-mean()-Y   | numeric | [-1, 1] | Frequency domain, Average of means for the jerk of the body acceleration on Y axis.                       |
-|   51  | Avrg-fBodyAccJerk-mean()-Z   | numeric | [-1, 1] | Frequency domain, Average of means for the jerk of the body acceleration on Z axis.                       |
-|   52  | Avrg-fBodyAccJerk-std()-X    | numeric | [-1, 1] | Frequency domain, Average of standard deviations for the jerk of the body acceleration on X axis.         |
-|   53  | Avrg-fBodyAccJerk-std()-Y    | numeric | [-1, 1] | Frequency domain, Average of standard deviations for the jerk of the body acceleration on Y axis.         |
-|   54  | Avrg-fBodyAccJerk-std()-Z    | numeric | [-1, 1] | Frequency domain, Average of standard deviations for the jerk of the body acceleration on Z axis.         |
-|   55  | Avrg-fBodyGyro-mean()-X      | numeric | [-1, 1] | Frequency domain, Average of means for the jerk of angular velocity on X axis.                            |
-|   56  | Avrg-fBodyGyro-mean()-Y      | numeric | [-1, 1] | Frequency domain, Average of means for the jerk of angular velocity on Y axis.                            |
-|   57  | Avrg-fBodyGyro-mean()-Z      | numeric | [-1, 1] | Frequency domain, Average of means for the jerk of angular velocity on Z axis.                            |
-|   58  | Avrg-fBodyGyro-std()-X       | numeric | [-1, 1] | Frequency domain, Average of standard deviations for the jerk of angular velocity on X axis.              |
-|   59  | Avrg-fBodyGyro-std()-Y       | numeric | [-1, 1] | Frequency domain, Average of standard deviations for the jerk of angular velocity on Y axis.              |
-|   60  | Avrg-fBodyGyro-std()-Z       | numeric | [-1, 1] | Frequency domain, Average of standard deviations for the jerk of angular velocity on Z axis.              |
-|   61  | Avrg-fBodyAccMag-mean()      | numeric | [-1, 1] | Frequency domain, Average of means for the magnitude of body acceleration.                                |
-|   62  | Avrg-fBodyAccMag-std()       | numeric | [-1, 1] | Frequency domain, Average of standard deviations for the magnitude of body acceleration.                  |
-|   63  | Avrg-fBodyAccJerkMag-mean()  | numeric | [-1, 1] | Frequency domain, Average of means for the magnitude of jerk, of body acceleration.                       |
-|   64  | Avrg-fBodyAccJerkMag-std()   | numeric | [-1, 1] | Frequency domain, Average of standard deviations for the magnitude of jerk, of body acceleration.         |
-|   65  | Avrg-fBodyGyroMag-mean()     | numeric | [-1, 1] | Frequency domain, Average of means for the magnitude of angular velocity.                                 |
-|   66  | Avrg-fBodyGyroMag-std()      | numeric | [-1, 1] | Frequency domain, Average of standard deviations for the magnitude of angular velocity.                   |
-|   67  | Avrg-fBodyGyroJerkMag-mean() | numeric | [-1, 1] | Frequency domain, Average of means for the magnitude of jerk, of angular velocity.                        |
-|   68  | Avrg-fBodyGyroJerkMag-std()  | numeric | [-1, 1] | Frequency domain, Average of standard deviation for the magnitude of jerk, of angular velocity.           |
+|	Index	|	Variables/Desc	|	Class	|	Range	|	Comments	|
+---	------	|	-------------------------------------------------------------------------------------------------------	|	----------	|	-------	|	--------------------------------------------------	|
+|	1	|	Activity	|	Character			|	 WALKING,  WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING	|
+|	2	|	Subject	|	Integer		1-30	|		|
+|	3	|	ActivityIndex	|	Integer		1-6	|		|
+|	4	|	Time domain signal: Body acceleration,  mean value in X direction	|	Numeric		-1,1	|		|
+|	5	|	Time domain signal: Body acceleration,  mean value in Y direction	|	Numeric		-1,1	|		|
+|	6	|	Time domain signal: Body acceleration,  mean value in Z direction	|	Numeric		-1,1	|		|
+|	7	|	Time domain signal: Body acceleration,  standard deviation in X direction	|	Numeric		-1,1	|		|
+|	8	|	Time domain signal: Body acceleration,  standard deviation in Y direction	|	Numeric		-1,1	|		|
+|	9	|	Time domain signal: Body acceleration,  standard deviation in Z direction	|	Numeric		-1,1	|		|
+|	10	|	Time domain signal: Gravity acceleration,  mean value in X direction	|	Numeric		-1,1	|		|
+|	11	|	Time domain signal: Gravity acceleration,  mean value in Y direction	|	Numeric		-1,1	|		|
+|	12	|	Time domain signal: Gravity acceleration,  mean value in Z direction	|	Numeric		-1,1	|		|
+|	13	|	Time domain signal: Gravity acceleration,  standard deviation in X direction	|	Numeric		-1,1	|		|
+|	14	|	Time domain signal: Gravity acceleration,  standard deviation in Y direction	|	Numeric		-1,1	|		|
+|	15	|	Time domain signal: Gravity acceleration,  standard deviation in Z direction	|	Numeric		-1,1	|		|
+|	16	|	Time domain signal: Body acceleration jerk,  mean value in X direction	|	Numeric		-1,1	|		|
+|	17	|	Time domain signal: Body acceleration jerk,  mean value in Y direction	|	Numeric		-1,1	|		|
+|	18	|	Time domain signal: Body acceleration jerk,  mean value in Z direction	|	Numeric		-1,1	|		|
+|	19	|	Time domain signal: Body acceleration jerk,  standard deviation in X direction	|	Numeric		-1,1	|		|
+|	20	|	Time domain signal: Body acceleration jerk,  standard deviation in Y direction	|	Numeric		-1,1	|		|
+|	21	|	Time domain signal: Body acceleration jerk,  standard deviation in Z direction	|	Numeric		-1,1	|		|
+|	22	|	Time domain signal: Body angular velocity,  mean value in X direction	|	Numeric		-1,1	|		|
+|	23	|	Time domain signal: Body angular velocity,  mean value in Y direction	|	Numeric		-1,1	|		|
+|	24	|	Time domain signal: Body angular velocity,  mean value in Z direction	|	Numeric		-1,1	|		|
+|	25	|	Time domain signal: Body angular velocity,  standard deviation in X direction	|	Numeric		-1,1	|		|
+|	26	|	Time domain signal: Body angular velocity,  standard deviation in Y direction	|	Numeric		-1,1	|		|
+|	27	|	Time domain signal: Body angular velocity,  standard deviation in Z direction	|	Numeric		-1,1	|		|
+|	28	|	Time domain signal: Body angular velocity jerk,  mean value in X direction	|	Numeric		-1,1	|		|
+|	29	|	Time domain signal: Body angular velocity jerk,  mean value in Y direction	|	Numeric		-1,1	|		|
+|	30	|	Time domain signal: Body angular velocity jerk,  mean value in Z direction	|	Numeric		-1,1	|		|
+|	31	|	Time domain signal: Body angular velocity jerk,  standard deviation in X direction	|	Numeric		-1,1	|		|
+|	32	|	Time domain signal: Body angular velocity jerk,  standard deviation in Y direction	|	Numeric		-1,1	|		|
+|	33	|	Time domain signal: Body angular velocity jerk,  standard deviation in Z direction	|	Numeric		-1,1	|		|
+|	34	|	Time domain signal: Body acceleration magnitude,  mean value 	|	Numeric		-1,1	|		|
+|	35	|	Time domain signal: Body acceleration magnitude,  standard deviation 	|	Numeric		-1,1	|		|
+|	36	|	Time domain signal: Gravity acceleration magnitude,  mean value 	|	Numeric		-1,1	|		|
+|	37	|	Time domain signal: Gravity acceleration magnitude,  standard deviation 	|	Numeric		-1,1	|		|
+|	38	|	Time domain signal: Body acceleration jerk magnitude,  mean value 	|	Numeric		-1,1	|		|
+|	39	|	Time domain signal: Body acceleration jerk magnitude,  standard deviation 	|	Numeric		-1,1	|		|
+|	40	|	Time domain signal: Body angular velocity magnitude,  mean value 	|	Numeric		-1,1	|		|
+|	41	|	Time domain signal: Body angular velocity magnitude,  standard deviation 	|	Numeric		-1,1	|		|
+|	42	|	Time domain signal: Body angular velocity jerk magnitude,  mean value 	|	Numeric		-1,1	|		|
+|	43	|	Time domain signal: Body angular velocity jerk magnitude,  standard deviation 	|	Numeric		-1,1	|		|
+|	44	|	Frequency domain signal: Body acceleration,  mean value in X direction	|	Numeric		-1,1	|		|
+|	45	|	Frequency domain signal: Body acceleration,  mean value in Y direction	|	Numeric		-1,1	|		|
+|	46	|	Frequency domain signal: Body acceleration,  mean value in Z direction	|	Numeric		-1,1	|		|
+|	47	|	Frequency domain signal: Body acceleration,  standard deviation in X direction	|	Numeric		-1,1	|		|
+|	48	|	Frequency domain signal: Body acceleration,  standard deviation in Y direction	|	Numeric		-1,1	|		|
+|	49	|	Frequency domain signal: Body acceleration,  standard deviation in Z direction	|	Numeric		-1,1	|		|
+|	50	|	Frequency domain signal: Body acceleration jerk,  mean value in X direction	|	Numeric		-1,1	|		|
+|	51	|	Frequency domain signal: Body acceleration jerk,  mean value in Y direction	|	Numeric		-1,1	|		|
+|	52	|	Frequency domain signal: Body acceleration jerk,  mean value in Z direction	|	Numeric		-1,1	|		|
+|	53	|	Frequency domain signal: Body acceleration jerk,  standard deviation in X direction	|	Numeric		-1,1	|		|
+|	54	|	Frequency domain signal: Body acceleration jerk,  standard deviation in Y direction	|	Numeric		-1,1	|		|
+|	55	|	Frequency domain signal: Body acceleration jerk,  standard deviation in Z direction	|	Numeric		-1,1	|		|
+|	56	|	Frequency domain signal: Body angular velocity,  mean value in X direction	|	Numeric		-1,1	|		|
+|	57	|	Frequency domain signal: Body angular velocity,  mean value in Y direction	|	Numeric		-1,1	|		|
+|	58	|	Frequency domain signal: Body angular velocity,  mean value in Z direction	|	Numeric		-1,1	|		|
+|	59	|	Frequency domain signal: Body angular velocity,  standard deviation in X direction	|	Numeric		-1,1	|		|
+|	60	|	Frequency domain signal: Body angular velocity,  standard deviation in Y direction	|	Numeric		-1,1	|		|
+|	61	|	Frequency domain signal: Body angular velocity,  standard deviation in Z direction	|	Numeric		-1,1	|		|
+|	62	|	Frequency domain signal: Body acceleration magnitude,  mean value 	|	Numeric		-1,1	|		|
+|	63	|	Frequency domain signal: Body acceleration magnitude,  standard deviation 	|	Numeric		-1,1	|		|
+|	64	|	Frequency domain signal: Body acceleration jerk magnitude,  mean value 	|	Numeric		-1,1	|		|
+|	65	|	Frequency domain signal: Body acceleration jerk magnitude,  standard deviation 	|	Numeric		-1,1	|		|
+|	66	|	Frequency domain signal: Body angular velocity magnitude,  mean value 	|	Numeric		-1,1	|		|
+|	67	|	Frequency domain signal: Body angular velocity magnitude,  standard deviation 	|	Numeric		-1,1	|		|
+|	68	|	Frequency domain signal: Body angular velocity jerk magnitude,  mean value 	|	Numeric		-1,1	|		|
+|	69	|	Frequency domain signal: Body angular velocity jerk magnitude,  standard deviation 	|	Numeric		-1,1	|		|
  
