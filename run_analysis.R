@@ -20,7 +20,7 @@
   dataType<-rep('test',NROW(X_test)) #identifying test data
   Merge_test<-cbind(Y_test,subject_test,X_test,dataType) #combine all columns.
   
- 
+  
 
 #5. Read Training data files into tables and then combine  into one table.
   X_train<-read.table("./data/UCI HAR Dataset/train/X_train.txt",col.names = features$Features,check.names = F)  
