@@ -39,8 +39,8 @@ The transformations are per the student project to produce a single tidy data fi
     + Prepare a single data set for each of Train and Test data
     + Merge/combine train and test data sets into single data set 
 2. Extract only the measurements on the mean and standard deviation for each measurement
-    # Identify required measurements
-    # Create a data set with only required measurements
+    + Identify required measurements
+    + Create a data set with only required measurements
 3. Assign descriptive activity names to name the activities in the data set
 4. Assign meaningful variable names to the measurements.
 4. Create an independent tidy data set with the average of each variable for each activity and each subject
