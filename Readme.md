@@ -5,7 +5,7 @@
 
 The ["Human Activity Recognition Using Smartphones Data Set Paper"](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) data is collected from the recordings of 30 subjects (within an age bracket of 19-48 years) performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors. The original data is made available in multiple files separately as train and test sets with 561 attributes.  
 
-### For each record it is provided:
+### Each record provides:
 
 - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
 - Triaxial Angular velocity from the gyroscope. 
@@ -14,7 +14,7 @@ The ["Human Activity Recognition Using Smartphones Data Set Paper"](http://archi
 - An identifier of the subject who carried out the experiment.
 
 ## Goal
-The purpose of this project to download and clean the data and create tidy data set that can be easily used for further analysis. The original source ["HARUSD"](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) provides many data files, however only the following files are used for processing the TidyData.csv:
+The purpose of this project is to download, clean the data and create a tidy data set that can be easily used for further analysis. The original source ["HARUSD"](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) provides many data files, however only the following files are used for processing the TidyData.csv:
 
 Folder/file name | File contents
 -------------- | --------------
@@ -35,14 +35,14 @@ The script "run_analysis.R" reads the above listed raw files and transforms to "
 
 1. Merge train and test data sets to a single data set
     + Download and read the raw data files
-    + Prepare a single data set for each of Train and Test data
+    + Prepare data sets for train and test data
     + Merge/combine train and test data sets into single data set 
-2. Extract only measurements - mean and standard deviation for each activity and subject
+2. Extract measurements - mean and standard deviation for each activity and subject
     + Identify required measurements
     + Create a data set with only required measurements
-3. Assign descriptive activity names to name the activities in the data set
+3. Assign descriptive names to the activity numbers in the data set
 4. Assign meaningful variable names to the measurements.
-4. Create an independent tidy data set with the average of each variable for each activity and each subject
+4. Create a tidy data set with averages for each activity and subject.
 
 
 
