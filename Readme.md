@@ -31,7 +31,7 @@ test/subject_test | the subject (numbers) for whom the data is available in X_te
 ## Tidy data set: Transformation from raw data:
 
 
-The script "run_analysis.R" reads the above listed raw files and transforms to "TidyData.csv" output file. Processing steps are follows:
+The script "run_analysis.R" reads the above listed raw files and transforms to "TidyData.txt" output file. Processing steps are follows:
 
 1. Merge train and test data sets to a single data set
     + Download and read the raw data files

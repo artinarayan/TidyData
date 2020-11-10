@@ -68,6 +68,6 @@
   tidy <- Measurements %>% 
     group_by(Activity,Subject) %>% 
     summarise_each(funs(mean))
-  write.table(tidy, file = "TidyData.csv", sep=",",row.names = FALSE)
+  write.table(tidy, file = "TidyData.txt",row.names = FALSE)
 
   

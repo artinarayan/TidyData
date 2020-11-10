@@ -1,5 +1,5 @@
-## Codebook - 'Tidydata.csv'  
-The script "run_analysis.R" reads the raw files and transforms to "TidyData.csv" output file. Processing steps are follows:
+## Codebook - 'Tidydata.txt'  
+The script "run_analysis.R" reads the raw files and transforms to "TidyData.txt" output file. Processing steps are follows:
 
 1. Merge train and test data sets to a single data set
     + Download and read the raw data files
@@ -18,7 +18,7 @@ The script "run_analysis.R" reads the raw files and transforms to "TidyData.csv"
     + Character t replaced with Time domain signal:
 5. Create a tidy data set with averages for each activity and subject.
  
-### Description of the variables from 'TidyData.csv'
+### Description of the variables from 'TidyData.txt'
  
 The first 3 variables, 'subject','activity' and activity index
 can uniquely identify each row in the file. 
