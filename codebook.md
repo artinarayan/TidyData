@@ -1,4 +1,4 @@
-## Cookbook - 'Tidydata.csv'  
+## Codebook - 'Tidydata.csv'  
 The script "run_analysis.R" reads the raw files and transforms to "TidyData.csv" output file. Processing steps are follows:
 
 1. Merge train and test data sets to a single data set
@@ -10,7 +10,13 @@ The script "run_analysis.R" reads the raw files and transforms to "TidyData.csv"
     + Create a data set with only required measurements
 3. Assign descriptive names to the activity numbers in the data set
 4. Assign meaningful variable names to the measurements.
-4. Create a tidy data set with averages for each activity and subject.
+    + Acc can be replaced with Acceleration
+    + GyroJerk can be replaced with Angular velocity jerk
+    + BodyBody can be replaced with Body
+    + Mag can be replaced with Magnitude
+    + Character f can be replaced with Frequency domain signal:
+    + Character t can be replaced with Time domain signal:
+5. Create a tidy data set with averages for each activity and subject.
  
 ### Description of the variables from 'TidyData.csv'
  
@@ -18,7 +24,6 @@ The first 3 variables, 'subject','activity' and activity index
 can uniquely identify each row in the file. 
 The rest of variables, are the averages for some selected features, namely means and standard deviations,
 from the original dataset: 'Human Activity Recognition Using Smartphones Dataset'.
-
 
 
 Column | Data Element | Type
