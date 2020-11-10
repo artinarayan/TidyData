@@ -23,7 +23,7 @@ from the original dataset: 'Human Activity Recognition Using Smartphones Dataset
 
 Column | Data Element | Type
 ---------|-------------|---------------------------
-1 | Activity | Numeric
+1 | Activity | Character
 2 | Subject | Numeric
 3 | ActivityIndex | Numeric
 4 | Time domain signal: Body acceleration,  mean value in X direction | Numeric
