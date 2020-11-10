@@ -1,4 +1,16 @@
 ## Informations on 'Tidydata.csv' data set  
+The script "run_analysis.R" reads the raw files and transforms to "TidyData.csv" output file. Processing steps are follows:
+
+1. Merge train and test data sets to a single data set
+    + Download and read the raw data files
+    + Prepare data sets for train and test data
+    + Merge/combine train and test data sets into single data set 
+2. Extract measurements - mean and standard deviation for each activity and subject
+    + Identify required measurements
+    + Create a data set with only required measurements
+3. Assign descriptive names to the activity numbers in the data set
+4. Assign meaningful variable names to the measurements.
+4. Create a tidy data set with averages for each activity and subject.
  
 ### Description of the variables from 'TidyData.csv'
  
