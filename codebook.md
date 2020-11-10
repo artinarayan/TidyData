@@ -1,4 +1,4 @@
-## Informations on 'Tidydata.csv' data set  
+## Cookbook - 'Tidydata.csv'  
 The script "run_analysis.R" reads the raw files and transforms to "TidyData.csv" output file. Processing steps are follows:
 
 1. Merge train and test data sets to a single data set
@@ -15,11 +15,9 @@ The script "run_analysis.R" reads the raw files and transforms to "TidyData.csv"
 ### Description of the variables from 'TidyData.csv'
  
 The first 3 variables, 'subject','activity' and activity index
-can uniquely identify each row of the table. 
-The rest of variables, are the averages for some selected features,
-those which contain informations on means and standard deviations,
-from the original dataset:
-'Human Activity Recognition Using Smartphones Dataset Version'.
+can uniquely identify each row in the file. 
+The rest of variables, are the averages for some selected features, namely means and standard deviations,
+from the original dataset: 'Human Activity Recognition Using Smartphones Dataset'.
 
 
 
@@ -29,7 +27,7 @@ Column | Data Element | Type
 2 | Subject | Numeric
 3 | ActivityIndex | Numeric
 4 | Time domain signal: Body acceleration,  mean value in X direction | Numeric
-6 | Time domain signal: Body acceleration,  mean value in Y direction |
+6 | Time domain signal: Body acceleration,  mean value in Y direction | Numeric
 7 | Time domain signal: Body acceleration,  mean value in Z direction | Numeric
 8 | Time domain signal: Body acceleration,  standard deviation in X direction | Numeric
 9 | Time domain signal: Body acceleration,  standard deviation in Y direction | Numeric
