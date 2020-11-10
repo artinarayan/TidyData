@@ -13,10 +13,13 @@ from the original dataset:
 
  
 ### Description of the variables from 'tidy_data_summary'
-- Activity
-- Subject
-- ActivityIndex
-- Time domain signal: Body acceleration,  mean value in X direction
+
+Column | Data Element | Type
+---------|-------------|---------------------------
+1 | Activity | Numeric
+2 | Subject | Numeric
+3 | ActivityIndex | Numeric
+4 | Time domain signal: Body acceleration,  mean value in X direction | Numeric
 - Time domain signal: Body acceleration,  mean value in Y direction
 - Time domain signal: Body acceleration,  mean value in Z direction
 - Time domain signal: Body acceleration,  standard deviation in X direction
@@ -82,3 +85,5 @@ from the original dataset:
 - Frequency domain signal: Body angular velocity magnitude,  standard deviation 
 - Frequency domain signal: Body angular velocity jerk magnitude,  mean value 
 - Frequency domain signal: Body angular velocity jerk magnitude,  standard deviation 
+
+
