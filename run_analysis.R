@@ -32,7 +32,7 @@
 #6. Merge training and test data
   Combined<-rbind(Merge_test,Merge_train)
 
-#B. EXTRACT MEAN AND STD DEV FOR EACH MEASUREMENT -----------------------------
+#B. EXTRACT MEAN AND STD DEV  -----------------------------
 
   col_other<-grep("Activity|Subject",names(Combined),ignore.case = T)
   col_measures<-grep("(mean|std)\\(\\)",names(Combined),ignore.case = T)
@@ -70,4 +70,4 @@
     summarise_each(funs(mean))
   write.table(tidy, file = "TidyData.csv", sep=",",row.names = FALSE)
 
-  knitr::kable(head(tidy,5))
+  
