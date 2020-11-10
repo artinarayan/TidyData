@@ -58,7 +58,7 @@
   col_names <- sub(x = col_names,pattern = 'GyroJerk',replacement = ' angular velocity jerk')
   col_names <- sub(x = col_names,pattern = 'Gyro',replacement = ' angular velocity')
   col_names <- sub(x = col_names,pattern = 'Mag',replacement = ' magnitude')
-  col_names <- sub(x = col_names,pattern = 'BodyBody',replacement = 'Body ')
+  col_names <- sub(x = col_names,pattern = 'BodyBody',replacement = 'Body')
   
   colnames(Measurements) <- col_names
 
@@ -70,4 +70,4 @@
     summarise_each(funs(mean))
   write.table(tidy, file = "TidyData.csv", sep=",",row.names = FALSE)
 
-
+  knitr::kable(head(tidy,5))
