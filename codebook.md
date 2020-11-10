@@ -10,12 +10,12 @@ The script "run_analysis.R" reads the raw files and transforms to "TidyData.csv"
     + Create a data set with only required measurements
 3. Assign descriptive names to the activity numbers in the data set
 4. Assign meaningful variable names to the measurements.
-    + Acc can be replaced with Acceleration
-    + GyroJerk can be replaced with Angular velocity jerk
-    + BodyBody can be replaced with Body
-    + Mag can be replaced with Magnitude
-    + Character f can be replaced with Frequency domain signal:
-    + Character t can be replaced with Time domain signal:
+    + Acc replaced with Acceleration
+    + GyroJerk replaced with Angular velocity jerk
+    + BodyBody replaced with Body
+    + Mag replaced with Magnitude
+    + Character f replaced with Frequency domain signal:
+    + Character t replaced with Time domain signal:
 5. Create a tidy data set with averages for each activity and subject.
  
 ### Description of the variables from 'TidyData.csv'
